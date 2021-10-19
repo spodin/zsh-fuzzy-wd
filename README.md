@@ -21,7 +21,7 @@ An [oh-my-zsh](https://ohmyz.sh) plugin that adds fuzzy search for directories "
    ```
    plugins=(
      ...
-     fuzzy-wd
+     zsh-fuzzy-wd
      ...
    )  
    ``` 
