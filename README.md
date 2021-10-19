@@ -16,7 +16,7 @@ An [oh-my-zsh](https://ohmyz.sh) plugin that adds fuzzy search for directories "
    git clone https://github.com/spodin/zsh-fuzzy-wd.git ~/.oh-my-zsh/custom/plugins/zsh-fuzzy-wd
    ```
 
-2. Enable it by adding `fuzzy-wd` to the plugins array in `~/.zshrc`:
+2. Enable it by adding `zsh-fuzzy-wd` to the plugins array in `~/.zshrc`:
 
    ```
    plugins=(
