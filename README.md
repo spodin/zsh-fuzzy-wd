@@ -36,3 +36,12 @@ An [oh-my-zsh](https://ohmyz.sh) plugin that adds fuzzy search for directories "
    ```
    
 2. Press `^B` to activate plugin, filter paths by typing and press `Enter` to change directory. 
+
+### Rebind activation key
+
+To rebind default activation key (`^B`) to another one add this to your `~/.zshrc` config:
+
+```bash
+bindkey -r "^B"                # unbind (optionally)
+bindkey '^G' fuzzy_wd_widget   # bind to Ctrl+G
+```
