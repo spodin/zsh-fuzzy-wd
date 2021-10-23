@@ -53,4 +53,4 @@ zle -N restore_buffer
 autoload -Uz add-zle-hook-widget
 add-zle-hook-widget line-init restore_buffer
 
-bindkey '^B' fuzzy_wd_widget
+bindkey ${FZF_WD_BINDKEY:-'^B'} fuzzy_wd_widget

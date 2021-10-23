@@ -41,9 +41,17 @@ An [oh-my-zsh](https://ohmyz.sh) plugin that adds fuzzy search for directories "
 
 ### Rebind activation key
 
-To rebind default activation key (`^B`) to another one add this to your `~/.zshrc` config:
+To rebind default activation key (`^B`) one of methods below can be used:
 
-```bash
-bindkey -r "^B"                # unbind (optionally)
-bindkey '^G' fuzzy_wd_widget   # bind to Ctrl+G
-```
+- Add this to your `~/.zshrc` config:
+
+  ```bash
+  bindkey -r "^B"                # unbind (optionally)
+  bindkey '^G' fuzzy_wd_widget   # bind to Ctrl+G
+  ```
+  
+- Set `FZF_WD_BINDKEY` environment variable:
+
+  ```bash
+  export FZF_WD_BINDKEY="^G"
+  ```
