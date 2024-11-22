@@ -31,7 +31,6 @@ fuzzy_wd() {
 fuzzy_wd_widget() {
   if [[ -e $WD_CONFIG ]]; then
     fuzzy_wd
-
     saved_buffer=$BUFFER
     saved_cursor=$CURSOR
     BUFFER=
@@ -49,7 +48,6 @@ restore_buffer() {
 
 zle -N fuzzy_wd_widget
 zle -N restore_buffer
-
 autoload -Uz add-zle-hook-widget
 add-zle-hook-widget line-init restore_buffer
 
