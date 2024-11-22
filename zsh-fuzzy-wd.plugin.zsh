@@ -21,7 +21,8 @@ fuzzy_wd() {
   done < ${WD_CONFIG}
 
   # pipe warp points to fzf for selection
-  selected=$(echo "${points[@]}" | tr ' ' '\n' | fzf --height ${FZF_TMUX_HEIGHT:-40%} --reverse)
+  fzf_opts=${FZF_DEFAULT_OPTS:---height=40% --reverse}
+  selected=$(echo "${points[@]}" | tr ' ' '\n' | fzf $=fzf_opts)
 
   if [[ -n "$selected" ]]; then
     cd $(eval echo "${selected}")
